@@ -4,7 +4,9 @@ package deck
 
 import (
 	"fmt"
+	"math/rand"
 	"sort"
+	"time"
 )
 
 type Suit uint8
@@ -77,7 +79,7 @@ func DefaultSort(cards []Card) []Card {
 	return cards
 }
 
-func Sort(less func(cards []Card) func(i, j int) bool) func([]Card) []Card{
+func Sort(less func(cards []Card) func(i, j int) bool) func([]Card) []Card {
 	return func(cards []Card) []Card {
 		sort.Slice(cards, less(cards))
 		return cards
@@ -92,4 +94,14 @@ func Less(cards []Card) func(i, j int) bool {
 
 func getAbsRank(c Card) int {
 	return int(c.Suit)*int(maxRank) + int(c.Rank)
+}
+
+func Shuffle(cards []Card) []Card {
+	ret := make([]Card, len(cards))
+	r := rand.New(rand.NewSource(time.Now().Unix()))
+	perm := r.Perm(len(cards))
+	for i, j := range perm {
+		ret[i] = cards[j]
+	}
+	return ret
 }
