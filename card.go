@@ -2,12 +2,13 @@
 
 package deck
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
-//Suit Type
 type Suit uint8
 
-//Suit Constants
 const (
 	Spade Suit = iota
 	Diamond
@@ -18,10 +19,8 @@ const (
 
 var suits = [...]Suit{Spade, Diamond, Club, Heart}
 
-//Rank Type
 type Rank uint8
 
-//Rank Constants
 const (
 	_ Rank = iota
 	Ace
@@ -44,7 +43,6 @@ const (
 	maxRank = King
 )
 
-//Card Struct
 type Card struct {
 	Suit
 	Rank
@@ -58,8 +56,7 @@ func (c Card) String() string {
 	return fmt.Sprintf("%s of %ss", c.Rank.String(), c.Suit.String())
 }
 
-//New Deck Function
-func New() []Card {
+func New(opts ...func([]Card) []Card) []Card {
 	var cards []Card
 
 	for _, suit := range suits {
@@ -68,5 +65,31 @@ func New() []Card {
 		}
 	}
 
+	for _, opt := range opts {
+		cards = opt(cards)
+	}
+
 	return cards
+}
+
+func DefaultSort(cards []Card) []Card {
+	sort.Slice(cards, Less(cards))
+	return cards
+}
+
+func Sort(less func(cards []Card) func(i, j int) bool) func([]Card) []Card{
+	return func(cards []Card) []Card {
+		sort.Slice(cards, less(cards))
+		return cards
+	}
+}
+
+func Less(cards []Card) func(i, j int) bool {
+	return func(i, j int) bool {
+		return getAbsRank(cards[i]) < getAbsRank(cards[j])
+	}
+}
+
+func getAbsRank(c Card) int {
+	return int(c.Suit)*int(maxRank) + int(c.Rank)
 }
