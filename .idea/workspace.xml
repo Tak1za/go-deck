@@ -35,8 +35,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
-  <component name="RunManager" selected="Go Test.go test go-deck (1)">
-    <configuration name="TestDefaultSort in go-deck" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestDeck in go-deck">
+    <configuration name="TestDeck in go-deck" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-deck" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -44,7 +44,18 @@
       <package value="go-deck" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestDefaultSort$" />
+      <pattern value="^TestDeck$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestFilter in go-deck" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-deck" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-deck" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestFilter$" />
       <method v="2" />
     </configuration>
     <configuration name="TestJoker in go-deck" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -79,23 +90,13 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go test go-deck" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-deck" />
-      <working_directory value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="go-deck" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestDeck in go-deck" />
+        <item itemvalue="Go Test.TestFilter in go-deck" />
         <item itemvalue="Go Test.go test go-deck (1)" />
         <item itemvalue="Go Test.TestJoker in go-deck" />
         <item itemvalue="Go Test.TestSort in go-deck" />
-        <item itemvalue="Go Test.go test go-deck" />
-        <item itemvalue="Go Test.TestDefaultSort in go-deck" />
       </list>
     </recent_temporary>
   </component>
@@ -111,7 +112,7 @@
       <updated>1589131137454</updated>
       <workItem from="1589131147300" duration="2146000" />
       <workItem from="1589173888458" duration="162000" />
-      <workItem from="1589198365001" duration="1691000" />
+      <workItem from="1589198365001" duration="3328000" />
     </task>
     <servers />
   </component>
@@ -131,22 +132,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="126" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1589174049363" />
-    <state width="1325" height="182" key="GridCell.Tab.0.bottom" timestamp="1589201178602">
+    <state width="1325" height="182" key="GridCell.Tab.0.bottom" timestamp="1589203257498">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589201178602" />
-    <state width="1325" height="182" key="GridCell.Tab.0.center" timestamp="1589201178602">
+    <state width="1325" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589203257498" />
+    <state width="1325" height="182" key="GridCell.Tab.0.center" timestamp="1589203257498">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589201178602" />
-    <state width="1325" height="182" key="GridCell.Tab.0.left" timestamp="1589201178601">
+    <state width="1325" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589203257498" />
+    <state width="1325" height="182" key="GridCell.Tab.0.left" timestamp="1589203257497">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589201178601" />
-    <state width="1325" height="182" key="GridCell.Tab.0.right" timestamp="1589201178602">
+    <state width="1325" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589203257497" />
+    <state width="1325" height="182" key="GridCell.Tab.0.right" timestamp="1589203257498">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589201178602" />
+    <state width="1325" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589203257498" />
     <state x="201" y="0" key="SettingsEditor" timestamp="1589201410176">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
