@@ -39,7 +39,7 @@ func TestDefaultSort(t *testing.T) {
 	}
 }
 
-func TestSort(t *testing.T) {
+func TestLessSort(t *testing.T) {
 	cards := New(Sort(Less))
 	exp := Card{
 		Suit: Spade,
@@ -47,6 +47,18 @@ func TestSort(t *testing.T) {
 	}
 	if cards[0] != exp {
 		t.Error("Expected ace of spades as first card. Received: ", cards[0])
+	}
+}
+
+func TestMoreSort(t *testing.T){
+	cards := New(Sort(More))
+	exp := Card {
+		Suit: Heart,
+		Rank: King,
+	}
+
+	if cards[0] != exp {
+		t.Error("Expected king of hearts as firs card. Received: ", cards[0])
 	}
 }
 

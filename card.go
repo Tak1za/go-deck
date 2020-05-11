@@ -92,6 +92,12 @@ func Less(cards []Card) func(i, j int) bool {
 	}
 }
 
+func More(cards []Card) func(i, j int) bool {
+	return func(i, j int) bool {
+		return getAbsRank(cards[i]) > getAbsRank(cards[j])
+	}
+}
+
 func getAbsRank(c Card) int {
 	return int(c.Suit)*int(maxRank) + int(c.Rank)
 }

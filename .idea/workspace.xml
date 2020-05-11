@@ -35,7 +35,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
-  <component name="RunManager" selected="Go Test.TestCount in go-deck">
+  <component name="RunManager" selected="Go Test.go test go-deck (1)">
     <configuration name="TestCount in go-deck" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-deck" />
       <working_directory value="$PROJECT_DIR$" />
@@ -92,11 +92,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.go test go-deck (1)" />
         <item itemvalue="Go Test.TestCount in go-deck" />
         <item itemvalue="Go Test.TestDefaultSort in go-deck" />
         <item itemvalue="Go Test.TestDeck in go-deck" />
         <item itemvalue="Go Test.TestFilter in go-deck" />
-        <item itemvalue="Go Test.go test go-deck (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +112,7 @@
       <updated>1589131137454</updated>
       <workItem from="1589131147300" duration="2146000" />
       <workItem from="1589173888458" duration="162000" />
-      <workItem from="1589198365001" duration="4183000" />
+      <workItem from="1589198365001" duration="4683000" />
     </task>
     <servers />
   </component>
@@ -132,22 +132,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="126" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1589174049363" />
-    <state width="1325" height="182" key="GridCell.Tab.0.bottom" timestamp="1589203918131">
+    <state width="1325" height="182" key="GridCell.Tab.0.bottom" timestamp="1589204446643">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589203918131" />
-    <state width="1325" height="182" key="GridCell.Tab.0.center" timestamp="1589203918131">
+    <state width="1325" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589204446643" />
+    <state width="1325" height="182" key="GridCell.Tab.0.center" timestamp="1589204446643">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589203918131" />
-    <state width="1325" height="182" key="GridCell.Tab.0.left" timestamp="1589203918130">
+    <state width="1325" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589204446643" />
+    <state width="1325" height="182" key="GridCell.Tab.0.left" timestamp="1589204446642">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589203918130" />
-    <state width="1325" height="182" key="GridCell.Tab.0.right" timestamp="1589203918131">
+    <state width="1325" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589204446642" />
+    <state width="1325" height="182" key="GridCell.Tab.0.right" timestamp="1589204446643">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589203918131" />
+    <state width="1325" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589204446643" />
     <state x="201" y="0" key="SettingsEditor" timestamp="1589201410176">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
