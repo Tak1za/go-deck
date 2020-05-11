@@ -139,3 +139,16 @@ func Deck(n int) func([]Card) []Card {
 		return ret
 	}
 }
+
+func Count(n int) func([]Card) []Card {
+	return func(cards []Card) []Card {
+		shuffledCards := Shuffle(cards)
+		var ret []Card
+
+		for i := 0; i < n; i++ {
+			ret = append(ret, shuffledCards[i])
+		}
+
+		return ret
+	}
+}

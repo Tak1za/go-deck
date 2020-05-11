@@ -82,3 +82,10 @@ func TestDeck(t *testing.T){
 		t.Error("Expected 156 cards. Found: ", len(cards))
 	}
 }
+
+func TestCount(t *testing.T){
+	cards := New(Count(10))
+	if len(cards) != 10 {
+		t.Error("Expected 10 cards. Found: ", len(cards))
+	}
+}
