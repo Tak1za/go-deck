@@ -32,10 +32,10 @@ func TestDefaultSort(t *testing.T) {
 	cards := New(DefaultSort)
 	exp := Card{
 		Suit: Spade,
-		Rank: Ace,
+		Rank: Two,
 	}
 	if cards[0] != exp {
-		t.Error("Expected ace of spades as first card. Received: ", cards[0])
+		t.Error("Expected two of spades as first card. Received: ", cards[0])
 	}
 }
 
@@ -43,26 +43,26 @@ func TestLessSort(t *testing.T) {
 	cards := New(Sort(Less))
 	exp := Card{
 		Suit: Spade,
+		Rank: Two,
+	}
+	if cards[0] != exp {
+		t.Error("Expected two of spades as first card. Received: ", cards[0])
+	}
+}
+
+func TestMoreSort(t *testing.T) {
+	cards := New(Sort(More))
+	exp := Card{
+		Suit: Heart,
 		Rank: Ace,
 	}
+
 	if cards[0] != exp {
-		t.Error("Expected ace of spades as first card. Received: ", cards[0])
+		t.Error("Expected ace of hearts as first card. Received: ", cards[0])
 	}
 }
 
-func TestMoreSort(t *testing.T){
-	cards := New(Sort(More))
-	exp := Card {
-		Suit: Heart,
-		Rank: King,
-	}
-
-	if cards[0] != exp {
-		t.Error("Expected king of hearts as firs card. Received: ", cards[0])
-	}
-}
-
-func TestJoker(t *testing.T){
+func TestJoker(t *testing.T) {
 	cards := New(Jokers(3))
 	count := 0
 	for _, c := range cards {
@@ -70,12 +70,12 @@ func TestJoker(t *testing.T){
 			count++
 		}
 	}
-	if count != 3{
+	if count != 3 {
 		t.Error("Expected 3 Jokers. Received: ", count)
 	}
 }
 
-func TestFilter(t *testing.T){
+func TestFilter(t *testing.T) {
 	filter := func(card Card) bool {
 		return card.Rank == 2 || card.Rank == 3
 	}
@@ -88,14 +88,14 @@ func TestFilter(t *testing.T){
 	}
 }
 
-func TestDeck(t *testing.T){
+func TestDeck(t *testing.T) {
 	cards := New(Deck(3))
-	if len(cards) != 3 * 52 {
+	if len(cards) != 3*52 {
 		t.Error("Expected 156 cards. Found: ", len(cards))
 	}
 }
 
-func TestCount(t *testing.T){
+func TestCount(t *testing.T) {
 	cards := New(Count(10))
 	if len(cards) != 10 {
 		t.Error("Expected 10 cards. Found: ", len(cards))

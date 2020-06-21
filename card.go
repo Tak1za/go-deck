@@ -25,7 +25,6 @@ type Rank uint8
 
 const (
 	_ Rank = iota
-	Ace
 	Two
 	Three
 	Four
@@ -38,11 +37,12 @@ const (
 	Jack
 	Queen
 	King
+	Ace
 )
 
 const (
-	minRank = Ace
-	maxRank = King
+	minRank = Two
+	maxRank = Ace
 )
 
 type Card struct {
