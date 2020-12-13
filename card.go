@@ -16,7 +16,6 @@ const (
 	Diamond
 	Club
 	Heart
-	Joker
 )
 
 var suits = [...]Suit{Spade, Diamond, Club, Heart}
@@ -51,10 +50,6 @@ type Card struct {
 }
 
 func (c Card) String() string {
-	if c.Suit == Joker {
-		return c.Suit.String()
-	}
-
 	return fmt.Sprintf("%s of %ss", c.Rank.String(), c.Suit.String())
 }
 
@@ -110,15 +105,6 @@ func Shuffle(cards []Card) []Card {
 		ret[i] = cards[j]
 	}
 	return ret
-}
-
-func Jokers(n int) func([]Card) []Card {
-	return func(cards []Card) []Card {
-		for i := 0; i < n; i++ {
-			cards = append(cards, Card{Suit: Joker, Rank: Rank(i)})
-		}
-		return cards
-	}
 }
 
 func Filter(f func(card Card) bool) func([]Card) []Card {
