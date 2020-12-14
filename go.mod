@@ -1,4 +1,4 @@
-module go-deck
+module github.com/Tak1za/go-deck
 
 go 1.13
 
